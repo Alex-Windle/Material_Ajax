@@ -32,7 +32,7 @@ export default class UserOrgs extends Component {
 		let orgs = this.state.orgs;
 
 		return (
-			<div>
+			<div className="users">
 			<h1>Git Hub Orgs for { user_name }</h1>
 				<ul>
 					{ orgs.map(::this.userOrgs) }
