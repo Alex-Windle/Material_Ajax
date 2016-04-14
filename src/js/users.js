@@ -1,5 +1,30 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
+import List from 'material-ui/lib/lists/list';
+import ListItem from 'material-ui/lib/lists/list-item';
+
+////////////////List style, icons left / right //////
+const ListExampleSimple = () => (
+  <MobileTearSheet>
+    <List>
+      <ListItem primaryText="Inbox" leftIcon={<ContentInbox />} />
+      <ListItem primaryText="Starred" leftIcon={<ActionGrade />} />
+      <ListItem primaryText="Sent mail" leftIcon={<ContentSend />} />
+      <ListItem primaryText="Drafts" leftIcon={<ContentDrafts />} />
+      <ListItem primaryText="Inbox" leftIcon={<ContentInbox />} />
+    </List>
+    <Divider />
+    <List>
+      <ListItem primaryText="All mail" rightIcon={<ActionInfo />} />
+      <ListItem primaryText="Trash" rightIcon={<ActionInfo />} />
+      <ListItem primaryText="Spam" rightIcon={<ActionInfo />} />
+      <ListItem primaryText="Follow up" rightIcon={<ActionInfo />} />
+    </List>
+  </MobileTearSheet>
+);
+
+export default ListExampleSimple;
+/////////////////////////////////////////////////////
 
 export default class Users extends Component {
 
